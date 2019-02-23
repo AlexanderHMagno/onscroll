@@ -93,7 +93,7 @@ $(function () {
         document.getElementById("demo").innerHTML = x + ", " + y;
         $('html, body').animate({
             scrollTop: $(window).scrollTop() + 1
-        }, 1500, 'linear');
+        }, 'linear');
       });
 
 
