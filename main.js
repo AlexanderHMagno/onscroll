@@ -97,7 +97,7 @@ $(function () {
         }, 'linear');
       };
 
-      document.querySelector('.wheel').addEventListener('touchmove', moveUp);
+      document.querySelector('.wheel').addEventListener('touchmove', moveUp());
 
 
 
