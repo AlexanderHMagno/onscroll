@@ -84,6 +84,18 @@ $(function () {
         $('html, body').animate({
             scrollTop: $(window).scrollTop() - 520
         }, 1500, 'linear');
-    })
+    });
+
+
+    window.ontouchmove = function(event) {
+        var x = event.touches[0].clientX;
+        var y = event.touches[0].clientY;
+        document.getElementById("demo").innerHTML = x + ", " + y;
+      }
+
+
+
+
+
 
 }) 
