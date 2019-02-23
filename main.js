@@ -87,20 +87,10 @@ $(function () {
     });
 
     
-
-        let moveUp = function(event) {
-        var x = event.touches[0].clientX;
-        var y = event.touches[0].clientY;
-        document.getElementById("demo").innerHTML = x + ", " + y;
-        $('html, body').animate({
-            scrollTop: $(window).scrollTop() + 1
-        }, 'linear');
-      };
-
-      document.querySelector('.wheel').addEventListener('touchmove', moveUp());
-
-
-
+    document.getElementById("myP").addEventListener("touchmove", myFunction);
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+      }
 
 
 
