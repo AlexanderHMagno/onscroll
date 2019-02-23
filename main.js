@@ -86,15 +86,18 @@ $(function () {
         }, 1500, 'linear');
     });
 
+    
 
-        $('.wheel').ontouchmove(function(event) {
+        let moveUp = function(event) {
         var x = event.touches[0].clientX;
         var y = event.touches[0].clientY;
         document.getElementById("demo").innerHTML = x + ", " + y;
         $('html, body').animate({
             scrollTop: $(window).scrollTop() + 1
         }, 'linear');
-      });
+      };
+
+      $('.wheel').on('touchmove', moveUp);
 
 
 
