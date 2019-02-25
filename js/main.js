@@ -100,7 +100,7 @@ $(function () {
  */
 
 let movement=0;
-$('.imageHolder').on({ 'touch' : function(initialTouch){
+$('.imageHolder').on({ 'touchstart' : function(initialTouch){
     let initialValue = 0 ;
 $('.imageHolder').on({ 'touchmove' : function(e){ 
    let maxWidth,currentX;
